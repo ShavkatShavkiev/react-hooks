@@ -3,12 +3,13 @@
 
 import * as React from 'react'
 
-function Greeting() {
+function Greeting(initialName) {
   // 💣 delete this variable declaration and replace it with a React.useState call
-  const name = ''
+  const [name, setname] = React.useState('Kody')
 
   function handleChange(event) {
     // 🐨 update the name here based on event.target.value
+    setname(event.target.value)
   }
 
   return (
